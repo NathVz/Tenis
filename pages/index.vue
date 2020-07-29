@@ -178,11 +178,11 @@ export default Vue.extend({
 		top: 280px;
 		@include for-phone{
 			left: 60px;
-			top: 140px;
+			top: 160px;
 		}
 		@include for-tablet{
 			left: 90px;
-			top: 170px;
+			top: 240px;
 		}
 		@include for-desktop{
 			left: 180px;
