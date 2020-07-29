@@ -119,19 +119,21 @@ export default Vue.extend({
 .vr{
     border: none;
     border-left: 1.2px solid  $white;
-    height: 100vh;
     width: 1px; 
     position: absolute;
     top: -18px;   
 	z-index: 0;
 	@include for-phone{
 		left: 30px;
+		height: 80vh;
 	}
 	@include for-tablet{
 		left: 50px;
+		height: 100vh;
 	}
 	@include for-desktop{
 		left: 125px;
+		height: 100vh;
 	}
 }
 .menu {
@@ -159,9 +161,17 @@ export default Vue.extend({
 }
 #hero {
 	width: 100%;
-	height: 100vh;
 	background-size: cover;
 	background-image: url("~assets/img/banner.jpg");
+	@include for-phone{
+		height: 80vh;
+	}
+	@include for-tablet{
+		height: 100vh;
+	}
+	@include for-desktop{
+		height: 100vh;
+	}
 	.ctn-banner{
 		position: absolute;
         left: 180px;
