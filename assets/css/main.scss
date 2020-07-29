@@ -1,0 +1,49 @@
+
+$sickly-yellow: #cbe346;
+$white: #ffff;
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    font-style: normal;
+    font-weight: 400;
+    src: url('~assets/fonts/HelveticaNeue.woff2') format('woff2');
+}
+
+body{
+    font-family: 'HelveticaNeue', sans-serif; 
+    font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'HelveticaNeue', sans-serif;  
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+// Responsive mixins 
+// Bootstrap breakpoints
+@mixin for-phone {
+    @media only screen and (max-width: 767px) {
+        @content;
+    }
+}
+
+@mixin for-tablet {
+    @media only screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin for-desktop {
+    @media only screen and (min-width: 992px) {
+        @content;
+    }
+}
+
+@mixin for-large {
+    @media only screen and (min-width: 1200px) {
+        @content;
+    }
+}
